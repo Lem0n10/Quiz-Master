@@ -84,7 +84,7 @@ const loadAndStartQuiz = async (customSettings = null) => {
     } else {
       setError("No questions available with these parameters");
       setLoading(false);
-      return { success: false, error: "No questions available" };
+      return { success: false, error: "No questions available with these parameters" };
     }
   } catch (err) {
     console.error("Error loading questions:", err);
