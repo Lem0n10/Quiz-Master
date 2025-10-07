@@ -1,5 +1,8 @@
+@import './fonts/satoshi.css' ;
+
 .App {
   text-align: center;
+  color: rgb(0, 0, 0);
 }
 
 .App-logo {
@@ -11,6 +14,24 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  transform: scale(1.05);
+}
+
+select {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+select:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(63, 155, 247, 0.841);
 }
 
 .App-header {
@@ -36,3 +57,15 @@
     transform: rotate(360deg);
   }
 }
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.font-satoshi-light { font-family: 'Satoshi-Light'; }
+.font-satoshi-regular { font-family: 'Satoshi-Regular'; }
+.font-satoshi-medium { font-family: 'Satoshi-Medium'; }
+.font-satoshi-bold { font-family: 'Satoshi-Bold'; }
+.font-satoshi-black { font-family: 'Satoshi-Black'; }
+.font-satoshi-variable { font-family: 'Satoshi-Variable', 'Satoshi-Regular', sans-serif; }
+.font-satoshi-variable-italic { font-family: 'Satoshi-VariableItalic', 'Satoshi-Italic', sans-serif; }
